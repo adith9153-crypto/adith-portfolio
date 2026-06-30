@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Cyberpunk-themed Cybersecurity Portfolio of Adith Shaji, Cybersecurity Analyst & VAPT Engineer. Browse security projects, credentials, and use the interactive hacker terminal.">
+    <meta name="keywords" content="Adith Shaji, Cybersecurity, VAPT, Penetration Testing, Bug Bounty, Broadcom, NIDS, Kali Linux, Web Application Security">
+    <meta name="author" content="Adith Shaji">
+    <title>ADITH SHAJI | CYBERSECURITY ANALYST & VAPT ENGINEER</title>
+    
+    <!-- Google Fonts: Orbitron (Headings), Share Tech Mono (Terminal), Rajdhani (UI Elements), Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-enabled scanlines-enabled">
+    <!-- Cyberpunk CRT Screen Effects -->
+    <div class="crt-screen-overlay"></div>
+    <div class="scanlines-overlay"></div>
+    <div class="grid-background"></div>
+
+    <!-- HUD Header -->
+    <header class="hud-header">
+        <div class="header-left">
+            <span class="hud-tag"><i class="fa-solid fa-shield-halved text-cyan animate-pulse"></i> SYSTEM_SECURE</span>
+            <span class="hud-divider">|</span>
+            <span class="hud-tag text-dim">LEVEL: ADMIN</span>
+            <span class="hud-divider">|</span>
+            <span class="hud-tag text-dim hide-mobile">NODE: KERALA_IN</span>
+        </div>
+        <div class="header-center">
+            <h1 class="hud-title glitch" data-text="ADITH_SHAJI.SYS">ADITH_SHAJI.SYS</h1>
+        </div>
+        <div class="header-right">
+            <button id="btn-sound" class="hud-control" title="Toggle Sound Synth" aria-label="Toggle Sound">
+                <i class="fa-solid fa-volume-xmark"></i> <span class="hide-mobile">SOUND: OFF</span>
+            </button>
+            <button id="btn-scanlines" class="hud-control active" title="Toggle Scanlines" aria-label="Toggle Scanlines">
+                <i class="fa-solid fa-barcode"></i> <span class="hide-mobile">CRT: ON</span>
+            </button>
+            <span class="hud-divider">|</span>
+            <span id="system-clock" class="hud-clock">00:00:00 UTC</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="hud-container">
+        
+        <!-- ROW 1: Hero & Terminal -->
+        <div class="hud-row grid-2-1">
+            
+            <!-- Hero Card -->
+            <section class="hud-panel hero-panel relative overflow-hidden" id="about">
+                <div class="panel-corner-tl"></div>
+                <div class="panel-corner-tr"></div>
+                <div class="panel-corner-bl"></div>
+                <div class="panel-corner-br"></div>
+                
+                <div class="hero-content">
+                    <div class="hero-avatar-wrapper">
+                        <!-- Neon glowing border corners -->
+                        <div class="avatar-corners"></div>
+                        <img src="assets/images/profile.png" alt="Adith Shaji - Cybersecurity Professional" class="hero-avatar">
+                        <div class="avatar-scanner"></div>
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-header">
+                            <span class="tag-cyber">AGENT IDENTIFIED</span>
+                            <h2 class="hero-name">Adith Shaji</h2>
+                            <p class="hero-title text-cyan">Cybersecurity Analyst // VAPT Engineer</p>
+                        </div>
+                        <p class="hero-summary">
+                            Cybersecurity enthusiast with practical experience in Web Application Security, Vulnerability Assessment & Penetration Testing (VAPT), and Bug Bounty hunting. Skilled in identifying security vulnerabilities following the OWASP Top 10 framework, offensive security, and building practical security tools.
+                        </p>
+                        <div class="hero-details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">COGNITIVE STATUS</span>
+                                <span class="detail-val text-green">ACTIVE</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">VULN DISCLOSURE</span>
+                                <span class="detail-val text-yellow">VERIFIED (BROADCOM)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">SECTOR</span>
+                                <span class="detail-val">KANNUR, KERALA</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">COMMS</span>
+                                <span class="detail-val text-cyan">SECURE LINK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Terminal Card -->
+            <section class="hud-panel terminal-panel">
+                <div class="panel-corner-tl"></div>
+                <div class="panel-corner-tr"></div>
+                <div class="panel-corner-bl"></div>
+                <div class="panel-corner-br"></div>
+                
+                <div class="panel-header">
+                    <span class="panel-title"><i class="fa-solid fa-terminal text-magenta"></i> DECRYPT_TERMINAL.EXE</span>
+                    <span class="panel-status text-magenta">ONLINE</span>
+                </div>
+                
+                <div class="terminal-body" id="terminal-screen">
+                    <div class="terminal-output" id="terminal-output-container">
+                        <div class="terminal-line">ADITH_SHAJI OS [Version 3.1.2026]</div>
+                        <div class="terminal-line">Connection established over TLSv1.3. Uptime check positive.</div>
+                        <div class="terminal-line text-cyan">Type 'help' to fetch decrypted systems directories.</div>
+                        <div class="terminal-line">&nbsp;</div>
+                    </div>
+                    <form class="terminal-input-wrapper" id="terminal-form">
+                        <span class="terminal-prompt">guest@adithshaji:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" autofocus aria-label="Terminal Input" placeholder="type 'help'...">
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- ROW 2: Experience & Skills -->
+        <div class="hud-row grid-1-1">
+            
+            <!-- Experience / Vitals -->
+            <section class="hud-panel" id="experience">
+                <div class="panel-corner-tl"></div>
+                <div class="panel-corner-tr"></div>
+                <div class="panel-corner-bl"></div>
+                <div class="panel-corner-br"></div>
+                
+                <div class="panel-header">
+                    <span class="panel-title"><i class="fa-solid fa-network-wired text-cyan"></i> CHRONOLOGY // EXPERIENCE LOG</span>
+                    <span class="panel-status text-cyan">DB_SYNC_OK</span>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Techcake Intern -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge bg-cyan"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role text-cyan">Cybersecurity Intern</h3>
+                                <span class="timeline-company">Techcake</span>
+                                <span class="timeline-date">2026 - April</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Performed vulnerability assessments and penetration testing on web applications.</li>
+                                <li>Identified security issues based on the OWASP Top 10 framework.</li>
+                                <li>Conducted testing using Burp Suite, Nmap, WPScan, SQLMap, Nikto, and Nuclei.</li>
+                                <li>Assisted in web traffic analysis and threat detection.</li>
+                                <li>Prepared professional vulnerability reports and remediation recommendations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge bg-magenta"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role text-magenta">Bachelor of Computer Applications</h3>
+                                <span class="timeline-company">BCA Academy</span>
+                                <span class="timeline-date">Completed</span>
+                            </div>
+                            <p class="timeline-summary">Focused on Core Computing, Networking Fundamentals, Database Systems, and Object-Oriented Software Design.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Matrix -->
+            <section class="hud-panel" id="skills">
+                <div class="panel-corner-tl"></div>
+                <div class="panel-corner-tr"></div>
+                <div class="panel-corner-bl"></div>
+                <div class="panel-corner-br"></div>
+                
+                <div class="panel-header">
+                    <span class="panel-title"><i class="fa-solid fa-microchip text-yellow"></i> SYSTEM_SKILLS_MATRIX</span>
+                    <span class="panel-status text-yellow">LOADED</span>
+                </div>
+
+                <div class="skills-container">
+                    <!-- Skill Column 1: Security -->
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title"><i class="fa-solid fa-shield-halved text-cyan"></i> Security & VAPT</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">Web Application Security</span><span class="skill-val text-cyan">90%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-cyan" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">Vulnerability Assessment (VAPT)</span><span class="skill-val text-cyan">85%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-cyan" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">OWASP Top 10 Exploits</span><span class="skill-val text-cyan">88%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-cyan" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">Wireless Security & Pentesting</span><span class="skill-val text-cyan">80%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-cyan" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">Bug Bounty Hunting</span><span class="skill-val text-cyan">75%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-cyan" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Column 2: Tools & Tech -->
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title"><i class="fa-solid fa-screwdriver-wrench text-magenta"></i> Security Toolkit</h3>
+                        <div class="skill-chips">
+                            <span class="chip chip-magenta"><i class="fa-solid fa-bug"></i> Burp Suite</span>
+                            <span class="chip chip-magenta"><i class="fa-solid fa-circle-nodes"></i> Nmap</span>
+                            <span class="chip chip-magenta"><i class="fa-solid fa-database"></i> SQLMap</span>
+                            <span class="chip chip-magenta"><i class="fa-brands fa-wordpress"></i> WPScan</span>
+                            <span class="chip chip-magenta"><i class="fa-solid fa-atom"></i> Nuclei</span>
+                            <span class="chip chip-magenta"><i class="fa-solid fa-radar"></i> Nikto</span>
+                            <span class="chip chip-magenta"><i class="fa-brands fa-linux"></i> Kali Linux</span>
+                        </div>
+
+                        <h3 class="skill-cat-title mt-4"><i class="fa-solid fa-code text-yellow"></i> Programming & OS</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">Python Scripting & Automation</span><span class="skill-val text-yellow">82%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-yellow" style="width: 82%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-info"><span class="skill-name">Machine Learning (Random Forest NIDS)</span><span class="skill-val text-yellow">70%</span></div>
+                                <div class="skill-bar"><div class="skill-fill bg-yellow" style="width: 70%"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-chips mt-2">
+                            <span class="chip chip-yellow"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="chip chip-yellow"><i class="fa-brands fa-windows"></i> Windows OS</span>
+                            <span class="chip chip-yellow"><i class="fa-solid fa-network-wired"></i> TCP/IP</span>
+                            <span class="chip chip-yellow"><i class="fa-solid fa-magnifying-glass"></i> Threat Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ROW 3: Projects (Full Width / Card Grid) -->
+        <section class="hud-panel" id="projects">
+            <div class="panel-corner-tl"></div>
+            <div class="panel-corner-tr"></div>
+            <div class="panel-corner-bl"></div>
+            <div class="panel-corner-br"></div>
+            
+            <div class="panel-header">
+                <span class="panel-title"><i class="fa-solid fa-folder-open text-cyan"></i> DECRYPTED_SECURITY_ARCHIVES (PROJECTS)</span>
+                <span class="panel-status text-cyan">ACCESS_GRANTED</span>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Broadcom Bypass -->
+                <div class="project-card critical-glow">
+                    <div class="card-border"></div>
+                    <div class="project-header">
+                        <span class="badge badge-critical">VULN_DISCLOSED</span>
+                        <span class="badge badge-tech">BROADCOM</span>
+                    </div>
+                    <h3 class="project-title text-magenta">OTP Bypass Vulnerability Discovery</h3>
+                    <p class="project-desc">Identified and responsibly disclosed a high-impact OTP authentication bypass vulnerability in Broadcom infrastructure. Developed a fully operational Proof of Concept (PoC) illustrating the exploit chain and drafted professional remediation briefs.</p>
+                    <div class="project-footer">
+                        <span class="footer-tag"><i class="fa-solid fa-circle-exclamation"></i> Threat: CRITICAL</span>
+                        <span class="footer-tag"><i class="fa-solid fa-code-commit"></i> Status: Disclosed</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Network Intrusion Detection System -->
+                <div class="project-card high-glow">
+                    <div class="card-border"></div>
+                    <div class="project-header">
+                        <span class="badge badge-high">SECURITY_TOOL</span>
+                        <span class="badge badge-tech">PYTHON / AI</span>
+                    </div>
+                    <h3 class="project-title text-cyan">Network Intrusion Detection System (NIDS)</h3>
+                    <p class="project-desc">Designed a python-based network packet sniffer with anomaly detection using Random Forest ML models. Incorporates real-time visual dashboard graphs, suspicious activity alerting, packet capture logs, and traffic threat rating analytics.</p>
+                    <div class="project-footer">
+                        <span class="footer-tag"><i class="fa-brands fa-python"></i> Python UI</span>
+                        <span class="footer-tag"><i class="fa-solid fa-brain"></i> Random Forest</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: WiFi Pentesting Tool -->
+                <div class="project-card medium-glow">
+                    <div class="card-border"></div>
+                    <div class="project-header">
+                        <span class="badge badge-medium">HARDWARE_MOD</span>
+                        <span class="badge badge-tech">ESP8266 NODEMCU</span>
+                    </div>
+                    <h3 class="project-title text-yellow">WiFi Security Testing Deauther Tool</h3>
+                    <p class="project-desc">Engineered an embedded wireless security testing console utilizing ESP8266 development boards. Demonstrates deauthentication, packet capturing, and client association attack frameworks to evaluate local router security strength.</p>
+                    <div class="project-footer">
+                        <span class="footer-tag"><i class="fa-solid fa-microchip"></i> NodeMCU</span>
+                        <span class="footer-tag"><i class="fa-solid fa-wifi"></i> 802.11 Pentest</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: TryHackMe CTF -->
+                <div class="project-card medium-glow">
+                    <div class="card-border"></div>
+                    <div class="project-header">
+                        <span class="badge badge-medium">CTF_BUILDER</span>
+                        <span class="badge badge-tech">TRYHACKME</span>
+                    </div>
+                    <h3 class="project-title text-cyan">TryHackMe Room Development</h3>
+                    <p class="project-desc">Designed and deployed a custom medium-difficulty vulnerable server laboratory on TryHackMe. Simulates progressive penetration pathways, covering Command Injection, Path Traversal, and Linux Privilege Escalation.</p>
+                    <div class="project-footer">
+                        <span class="footer-tag"><i class="fa-solid fa-flag"></i> CTF Design</span>
+                        <span class="footer-tag text-green"><i class="fa-solid fa-glasses"></i> QA Review</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: Kali NetHunter on Android -->
+                <div class="project-card low-glow">
+                    <div class="card-border"></div>
+                    <div class="project-header">
+                        <span class="badge badge-low">MOBILE_OPS</span>
+                        <span class="badge badge-tech">ANDROID / LINEAGEOS</span>
+                    </div>
+                    <h3 class="project-title text-light">Kali NetHunter Mobile Pentesting Rig</h3>
+                    <p class="project-desc">Configured Kali NetHunter kernel on LineageOS firmware. Ported custom drivers supporting external Wi-Fi packet injection and OTG network devices, turning an Android phone into a pocket-sized scanning workstation.</p>
+                    <div class="project-footer">
+                        <span class="footer-tag"><i class="fa-brands fa-android"></i> Android Root</span>
+                        <span class="footer-tag"><i class="fa-brands fa-linux"></i> NetHunter</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: Bug Bounty & Vulnerabilities -->
+                <div class="project-card high-glow">
+                    <div class="card-border"></div>
+                    <div class="project-header">
+                        <span class="badge badge-high">BUG_BOUNTY</span>
+                        <span class="badge badge-tech">OWASP / KALI</span>
+                    </div>
+                    <h3 class="project-title text-magenta">Vulnerability Research & Bug Hunting</h3>
+                    <p class="project-desc">Responsible security vulnerability research. Disclosed severe security vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), and authentication logic flaws across international web architectures.</p>
+                    <div class="project-footer">
+                        <span class="footer-tag"><i class="fa-solid fa-bug"></i> Exploit PoCs</span>
+                        <span class="footer-tag"><i class="fa-solid fa-circle-check"></i> Responsible Disclosure</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROW 4: Certs & Secure Communications -->
+        <div class="hud-row grid-1-2">
+            <!-- Certs Panel -->
+            <section class="hud-panel">
+                <div class="panel-corner-tl"></div>
+                <div class="panel-corner-tr"></div>
+                <div class="panel-corner-bl"></div>
+                <div class="panel-corner-br"></div>
+                
+                <div class="panel-header">
+                    <span class="panel-title"><i class="fa-solid fa-certificate text-yellow"></i> CREDENTIAL_KEYS (CERTS)</span>
+                    <span class="panel-status text-yellow">VERIFIED</span>
+                </div>
+                
+                <div class="certs-list">
+                    <div class="cert-item">
+                        <div class="cert-icon-container">
+                            <i class="fa-solid fa-award text-yellow cert-medal"></i>
+                        </div>
+                        <div class="cert-info-text">
+                            <h4 class="cert-name text-light">Advanced Cyber Security – An Application Approach</h4>
+                            <p class="cert-issuer">Tata Consultancy Services (TCS)</p>
+                            <span class="cert-status-badge text-cyan"><i class="fa-solid fa-shield"></i> VALIDATED</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-item opacity-75">
+                        <div class="cert-icon-container">
+                            <i class="fa-solid fa-graduation-cap text-dim"></i>
+                        </div>
+                        <div class="cert-info-text">
+                            <h4 class="cert-name">Bachelor of Computer Applications</h4>
+                            <p class="cert-issuer">Computer Science Department</p>
+                            <span class="cert-status-badge"><i class="fa-solid fa-user-graduate"></i> ACADEMIC</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secure Uplink Form -->
+            <section class="hud-panel" id="contact">
+                <div class="panel-corner-tl"></div>
+                <div class="panel-corner-tr"></div>
+                <div class="panel-corner-bl"></div>
+                <div class="panel-corner-br"></div>
+                
+                <div class="panel-header">
+                    <span class="panel-title"><i class="fa-solid fa-envelope text-magenta"></i> ESTABLISH_SECURE_UPLINK (CONTACT)</span>
+                    <span class="panel-status text-magenta">UPLINK_READY</span>
+                </div>
+
+                <div class="uplink-grid">
+                    <div class="uplink-instructions">
+                        <p class="mb-3">Transmit encrypted queries or request credential access tokens. Connection endpoints are routed directly to Adith Shaji's main command queue.</p>
+                        <div class="direct-channels">
+                            <a href="mailto:adith9153@gmail.com" class="channel-link"><i class="fa-solid fa-envelope text-cyan"></i> adith9153@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/adithshaji" target="_blank" rel="noopener noreferrer" class="channel-link"><i class="fa-brands fa-linkedin text-cyan"></i> linkedin.com/in/adithshaji</a>
+                        </div>
+                    </div>
+
+                    <form class="uplink-form" id="uplink-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-sender">SENDER_IDENTITY :</label>
+                                <input type="text" id="form-sender" placeholder="e.g. AGENT OR CORPORATION" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">UPLINK_ENDPOINT :</label>
+                                <input type="email" id="form-email" placeholder="e.g. secure@endpoint.xyz" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">TRANSMISSION_PAYLOAD :</label>
+                            <textarea id="form-message" rows="4" placeholder="Enter transmission message packet..." required></textarea>
+                        </div>
+                        <button type="submit" class="cyber-btn bg-magenta-neon">
+                            <span class="btn-glitch-overlay"></span>
+                            <span class="btn-text"><i class="fa-solid fa-satellite-dish"></i> INITIATE_SECURE_TRANSMISSION</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- UI Overlay for simulated transmission success -->
+    <div id="uplink-success-modal" class="uplink-modal hidden">
+        <div class="modal-content text-center">
+            <i class="fa-solid fa-tower-broadcast text-magenta animate-pulse text-4xl mb-4"></i>
+            <h3 class="text-magenta font-orbitron mb-2">UPLINK_TRANSMITTED_SUCCESSFULLY</h3>
+            <p class="font-mono text-sm text-dim mb-4">Encryption: SHA-256 | Route: MULTI-HOP | Packet Size: 1.2KB</p>
+            <div class="modal-terminal-box">
+                <span class="text-cyan">[OK] Packet checksum verified.</span><br>
+                <span class="text-cyan">[OK] Payload queued in Adith Shaji's terminal inbox.</span>
+            </div>
+            <button class="cyber-btn bg-cyan-neon mt-4" id="close-modal-btn">CLOSE Secure Connection</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="hud-footer">
+        <div class="footer-left">
+            <span>&copy; 2026 ADITH SHAJI. All rights reserved.</span>
+        </div>
+        <div class="footer-right">
+            <span>STATUS: SECURED_NODE_DECRYPTED</span>
+            <span class="hide-mobile"> // SECURITY_PORTFOLIO_V3.1.2_RELEASE</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="script.js"></script>
+</body>
+</html>
